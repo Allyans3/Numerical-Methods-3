@@ -10,6 +10,7 @@ function triangle_method(a, b, N) {
     return S;
 }
 
+//-----------------------------------------
 
 function trapezdoidal_rule(a, b, N) {
     var S = 0;
@@ -26,6 +27,7 @@ function trapezdoidal_rule(a, b, N) {
     return S;
 }
 
+//-----------------------------------------
 
 function simpson_method(a, b, N) {
     var S = 0;
@@ -75,7 +77,7 @@ function get_maximum(a, b, bool) {
 function triangle_error(a, b, h=0.01) {
     var max = get_maximum(a, b, true);
 
-    return max *(b - a) * h / 2;
+    return max *(b - a) * h / 24;
 }
 
 function trapezdoidal_error(a, b, h=0.01) {
